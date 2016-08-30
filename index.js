@@ -253,7 +253,7 @@ export function createAnimatableComponent(component) {
     componentDidMount() {
       const { animation, duration, delay, onAnimationBegin, onAnimationEnd } = this.props;
       if (animation) {
-        if (delay) {
+        if (delay && animation !== 'none') {
           this.setState({ scheduledAnimation: animation });
           this._timer = setTimeout(() =>{
             onAnimationBegin();
@@ -271,7 +271,11 @@ export function createAnimatableComponent(component) {
           }
         }
         onAnimationBegin();
-        this[animation](duration).then(onAnimationEnd);
+        if (animation !== 'none') {
+          this[animation](duration).then(onAnimationEnd);
+        } else {
+          onAnimationEnd();
+        }
       }
     }
 
@@ -288,7 +292,7 @@ export function createAnimatableComponent(component) {
         const values = getStyleValues(transition, props.style);
         this.transitionTo(values, duration, easing);
       } else if (animation !== this.props.animation) {
-        if (animation) {
+        if (animation && animation != 'none') {
           if (delay) {
             this.setState({ scheduledAnimation: animation });
 
