@@ -1,5 +1,5 @@
 {
-  "name": "@pod-point/react-native-animatable",
+  "name": "@pod-point-open-source/react-native-animatable",
   "version": "0.6.2",
   "description": "Easy to use declarative transitions and a standard set of animations for React Native",
   "main": "index.js",
