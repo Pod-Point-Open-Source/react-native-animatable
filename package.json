@@ -1,5 +1,5 @@
 {
-  "name": "@pod-point-open-source/react-native-animatable",
+  "name": "@pod-point/react-native-animatable",
   "version": "0.6.2",
   "description": "Easy to use declarative transitions and a standard set of animations for React Native",
   "main": "index.js",
@@ -26,13 +26,13 @@
     "name": "POD Point",
     "email": "software@pod-point.com"
   },
-  "homepage": "https://github.com/Pod-Point-Open-Source/react-native-animatable",
+  "homepage": "https://github.com/Pod-Point/react-native-animatable",
   "bugs": {
-    "url": "https://github.com/Pod-Point-Open-Source/react-native-animatable/issues"
+    "url": "https://github.com/Pod-Point/react-native-animatable/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Pod-Point-Open-Source/react-native-animatable.git"
+    "url": "git://github.com/Pod-Point/react-native-animatable.git"
   },
   "license": "MIT",
   "devDependencies": {
