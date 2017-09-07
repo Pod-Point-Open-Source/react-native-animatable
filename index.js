@@ -1,6 +1,5 @@
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 
 import ReactNative, {
@@ -9,6 +8,8 @@ import ReactNative, {
   Dimensions,
   StyleSheet,
 } from 'react-native';
+
+import PropTypes from 'prop-types';
 
 // Transform an object to an array the way react native wants it for transform styles
 // { a: x, b: y } => [{ a: x }, { b: y }]
